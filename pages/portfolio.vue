@@ -8,7 +8,18 @@
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="section">
+      <div class="container">
+        <div class="content-section reveal">
+          <h2 class="section-title">{{ $t('portfolio.aboutTitle') }}</h2>
+          <p class="section-text">{{ $t('portfolio.aboutDesc') }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="showcase-grid reveal">
           <!-- WELC -->
@@ -40,8 +51,56 @@
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- Detailed Project Descriptions -->
+    <section class="section">
+      <div class="container">
+        <div class="project-details">
+          <div class="project-detail reveal">
+            <h3>WeLoveEverythingCrypto</h3>
+            <p>{{ $t('portfolio.welcFullDesc') }}</p>
+          </div>
+          <div class="project-detail reveal">
+            <h3>Handball Stats App</h3>
+            <p>{{ $t('portfolio.handballFullDesc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
+      <div class="container">
+        <div class="text-center mb-3">
+          <span class="hero-tagline">{{ $t('common.howItWorks') }}</span>
+          <h2>{{ $t('portfolio.technologiesTitle') }}</h2>
+          <p style="max-width: 700px; margin: 0 auto;">{{ $t('portfolio.technologiesDesc') }}</p>
+        </div>
+
+        <div class="tech-grid reveal">
+          <div class="tech-item">
+            <span class="tech-name">Vue 3</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">Nuxt 3</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">TypeScript</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">TailwindCSS</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-name">AI APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
       <div class="container">
         <div class="card text-center" style="padding: var(--space-xl); max-width: 800px; margin: 0 auto;">
           <h2 class="mb-1">{{ $t('cta.title') }}</h2>
@@ -65,3 +124,71 @@ useSeoMeta({
   description: () => t('portfolio.subtitle'),
 })
 </script>
+
+<style scoped>
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: var(--space-md);
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+  color: var(--color-text-muted);
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--space-xl);
+}
+
+.project-detail {
+  background: var(--color-surface);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.project-detail h3 {
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.project-detail p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-md);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tech-item {
+  background: var(--color-surface);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.tech-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .project-details {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
