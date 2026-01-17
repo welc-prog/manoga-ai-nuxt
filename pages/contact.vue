@@ -45,6 +45,18 @@
                 {{ $t('footer.denmark') }}
               </div>
             </div>
+
+            <!-- Additional Info Cards -->
+            <div class="info-cards">
+              <div class="info-card">
+                <h4>{{ $t('contact.responseTime') }}</h4>
+                <p>{{ $t('contact.responseTimeDesc') }}</p>
+              </div>
+              <div class="info-card">
+                <h4>{{ $t('contact.freeConsultation') }}</h4>
+                <p>{{ $t('contact.freeConsultationDesc') }}</p>
+              </div>
+            </div>
           </div>
 
           <div class="reveal-right">
@@ -94,6 +106,26 @@
         </div>
       </div>
     </section>
+
+    <!-- Additional Information Section -->
+    <section class="section" style="background: rgba(30, 41, 59, 0.3);">
+      <div class="container">
+        <div class="additional-info-grid reveal">
+          <div class="additional-info-item">
+            <h4>{{ $t('contact.workingWith') }}</h4>
+            <p>{{ $t('contact.workingWithDesc') }}</p>
+          </div>
+          <div class="additional-info-item">
+            <h4>{{ $t('contact.preferredContact') }}</h4>
+            <p>{{ $t('contact.preferredContactDesc') }}</p>
+          </div>
+          <div class="additional-info-item">
+            <h4>{{ $t('contact.globalReach') }}</h4>
+            <p>{{ $t('contact.globalReachDesc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -118,3 +150,52 @@ const submitForm = () => {
   window.location.href = mailtoLink
 }
 </script>
+
+<style scoped>
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.info-card {
+  background: var(--color-surface);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.info-card h4 {
+  margin-bottom: var(--space-xs);
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.info-card p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.additional-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.additional-info-item {
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.additional-info-item h4 {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.additional-info-item p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+</style>
