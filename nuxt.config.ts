@@ -19,13 +19,15 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
-      { code: 'da', language: 'da-DK', name: 'Dansk', file: 'da.json' }
+      { code: 'en', language: 'en-US', name: 'English', files: ['en.json'] },
+      { code: 'da', language: 'da-DK', name: 'Dansk', files: ['da.json'] }
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     lazy: true,
-    langDir: 'i18n',
+    bundle: {
+      fullInstall: false
+    },
     detectBrowserLanguage: false
   },
 
