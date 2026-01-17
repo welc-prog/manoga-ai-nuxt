@@ -427,6 +427,79 @@ p {
 }
 
 /* ============================================
+   SECTION BACKGROUNDS - AI Generated
+   ============================================ */
+.bg-hero-neural {
+    position: relative;
+}
+
+.bg-hero-neural::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/images/bg-hero-neural.webp') center center / cover no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.bg-marketing {
+    position: relative;
+    background: transparent !important;
+}
+
+.bg-marketing::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/images/bg-marketing.webp') center center / cover no-repeat;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.bg-marketing > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-geometric {
+    position: relative;
+    background: transparent !important;
+}
+
+.bg-geometric::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/images/bg-geometric.webp') center center / cover no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.bg-geometric > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-gradient-mesh {
+    position: relative;
+    background: transparent !important;
+}
+
+.bg-gradient-mesh::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/images/bg-gradient-mesh.webp') center center / cover no-repeat;
+    opacity: 0.35;
+    z-index: 0;
+}
+
+.bg-gradient-mesh > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
    HERO
    ============================================ */
 .hero {

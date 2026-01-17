@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="hero section" id="hero">
+    <section class="hero section bg-hero-neural" id="hero">
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
@@ -100,7 +100,7 @@
     </section>
 
     <!-- Digital Marketing Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3);">
+    <section class="section bg-marketing">
       <div class="container">
         <div class="text-center mb-3">
           <span class="hero-tagline">{{ $t('marketing.tagline') }}</span>
@@ -236,7 +236,7 @@
     </section>
 
     <!-- Process Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3);">
+    <section class="section bg-geometric">
       <div class="container">
         <div class="text-center mb-3">
           <span class="hero-tagline">{{ $t('process.tagline') }}</span>
@@ -269,7 +269,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section">
+    <section class="section bg-gradient-mesh">
       <div class="container">
         <div class="card text-center" style="padding: var(--space-xl); max-width: 800px; margin: 0 auto;">
           <h2 class="mb-1">{{ $t('cta.title') }}</h2>
@@ -289,7 +289,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section" id="contact" style="background: rgba(30, 41, 59, 0.3);">
+    <section class="section bg-marketing" id="contact">
       <div class="container">
         <div class="contact-grid">
           <div class="contact-info reveal-left">
