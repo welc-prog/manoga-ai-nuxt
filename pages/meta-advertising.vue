@@ -9,7 +9,7 @@
             <p class="page-header-description">{{ $t('marketing.metaAds') }}</p>
           </div>
           <div class="page-header-image">
-            <img src="/images/meta-ads.webp" alt="Meta Advertising" />
+            <img src="/images/meta-advertising.webp" alt="Meta Advertising" />
           </div>
         </div>
       </div>
