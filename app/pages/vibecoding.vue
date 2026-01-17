@@ -216,9 +216,12 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 
+// SEO - use computed values for SSR consistency
+const pageDescription = computed(() => t('services.vibecoding'))
+
 useSeoMeta({
-  title: () => `Vibecoding | Manoga AI`,
-  description: () => t('services.vibecoding'),
+  title: 'Vibecoding | Manoga AI',
+  description: pageDescription
 })
 </script>
 

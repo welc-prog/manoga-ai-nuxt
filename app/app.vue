@@ -14,9 +14,10 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 
+// Use computed to ensure consistent value between SSR and client
 useHead({
   htmlAttrs: {
-    lang: locale
+    lang: computed(() => locale.value)
   }
 })
 </script>

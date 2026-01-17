@@ -80,6 +80,17 @@ export default defineNuxtConfig({
     compilerOptions: {
       // Suppress hydration mismatch warnings for specific patterns
       isCustomElement: (tag) => tag.startsWith('client-only')
+    },
+    // Enable detailed hydration mismatch warnings in development
+    config: {
+      performance: true
+    }
+  },
+
+  // Vite config for hydration debugging
+  vite: {
+    define: {
+      __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: true
     }
   },
 

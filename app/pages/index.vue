@@ -385,12 +385,15 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 
-// SEO
+// SEO - use computed values for SSR consistency
+const homeTitle = computed(() => t('meta.homeTitle'))
+const homeDescription = computed(() => t('meta.homeDescription'))
+
 useSeoMeta({
-  title: () => t('meta.homeTitle'),
-  description: () => t('meta.homeDescription'),
-  ogTitle: () => t('meta.homeTitle'),
-  ogDescription: () => t('meta.homeDescription'),
+  title: homeTitle,
+  description: homeDescription,
+  ogTitle: homeTitle,
+  ogDescription: homeDescription
 })
 
 // Form handling

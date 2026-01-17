@@ -132,9 +132,13 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
+// SEO - use computed values for SSR consistency
+const contactTitle = computed(() => `${t('contact.tagline')} | Manoga AI`)
+const contactDescription = computed(() => t('contact.subtitle'))
+
 useSeoMeta({
-  title: () => `${t('contact.tagline')} | Manoga AI`,
-  description: () => t('contact.subtitle'),
+  title: contactTitle,
+  description: contactDescription
 })
 
 const form = reactive({

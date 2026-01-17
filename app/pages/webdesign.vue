@@ -183,9 +183,13 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 
+// SEO - use computed values for SSR consistency
+const pageTitle = computed(() => `${t('nav.webdesign')} | Manoga AI`)
+const pageDescription = computed(() => t('marketing.webDesign'))
+
 useSeoMeta({
-  title: () => `${t('nav.webdesign')} | Manoga AI`,
-  description: () => t('marketing.webDesign'),
+  title: pageTitle,
+  description: pageDescription
 })
 </script>
 
