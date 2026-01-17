@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4
+  },
+
   devtools: { enabled: true },
 
   site: {
@@ -44,7 +48,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxt/eslint'],
 
   i18n: {
     locales: [
@@ -53,7 +57,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
-    lazy: true,
+    langDir: 'locales',
     bundle: {
       fullInstall: false
     },
@@ -61,9 +65,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true },
-    '/da': { prerender: true },
-    '/da/**': { prerender: true },
     '/**': { prerender: true }
   },
 
