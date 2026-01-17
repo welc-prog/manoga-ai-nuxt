@@ -1400,7 +1400,7 @@ p {
    MARQUEE / TICKER
    ============================================ */
 .section-sm {
-    padding: var(--space-lg) 0;
+    padding: 1rem 0;
 }
 
 .marquee {
@@ -1422,20 +1422,20 @@ p {
 .marquee-content span {
     display: inline-flex;
     align-items: center;
-    padding: 0 var(--space-lg);
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--text-secondary);
+    padding: 0 1.5rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-muted);
     white-space: nowrap;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
 }
 
 .marquee-content span::after {
     content: '\2022';
-    margin-left: var(--space-lg);
+    margin-left: 1.5rem;
     color: var(--accent);
-    font-size: 0.75rem;
+    font-size: 0.5rem;
 }
 
 .marquee:hover .marquee-content {
@@ -1475,17 +1475,17 @@ p {
 
 @media (max-width: 768px) {
     .marquee-content span {
-        padding: 0 var(--space-md);
-        font-size: 0.9375rem;
+        padding: 0 1rem;
+        font-size: 0.75rem;
     }
 
     .marquee-content span::after {
-        margin-left: var(--space-md);
+        margin-left: 1rem;
     }
 
     .marquee::before,
     .marquee::after {
-        width: 50px;
+        width: 30px;
     }
 }
 
