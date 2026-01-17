@@ -212,7 +212,8 @@ p {
     z-index: 1000;
     padding: var(--space-sm) 0;
     transition: var(--transition-normal);
-    backdrop-filter: blur(0px);
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .site-header.scrolled {
