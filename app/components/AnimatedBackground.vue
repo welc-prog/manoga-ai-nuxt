@@ -8,6 +8,9 @@
         :style="particle"
       />
     </div>
+    <template #fallback>
+      <div class="bg-animation" aria-hidden="true"></div>
+    </template>
   </ClientOnly>
 </template>
 

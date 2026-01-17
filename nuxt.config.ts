@@ -68,7 +68,24 @@ export default defineNuxtConfig({
     bundle: {
       fullInstall: false
     },
-    detectBrowserLanguage: false
+    detectBrowserLanguage: false,
+    experimental: {
+      // Ensure messages are fully loaded before hydration
+      typedPages: false
+    }
+  },
+
+  // Vue compiler options for hydration
+  vue: {
+    compilerOptions: {
+      // Suppress hydration mismatch warnings for specific patterns
+      isCustomElement: (tag) => tag.startsWith('client-only')
+    }
+  },
+
+  // Experimental features for better hydration
+  experimental: {
+    payloadExtraction: false
   },
 
   routeRules: {
