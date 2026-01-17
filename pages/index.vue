@@ -62,8 +62,8 @@
         <div class="services-grid stagger reveal">
           <!-- Vibecoding -->
           <div class="card service-card">
-            <div class="card-icon">
-              <IconCode />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-vibecoding.webp" alt="Vibecoding" loading="lazy" />
             </div>
             <h3 class="card-title">Vibecoding</h3>
             <p class="card-text">{{ $t('services.vibecoding') }}</p>
@@ -74,8 +74,8 @@
 
           <!-- AI Consulting -->
           <div class="card service-card">
-            <div class="card-icon">
-              <IconBrain />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-ai-consulting.webp" alt="AI Consulting" loading="lazy" />
             </div>
             <h3 class="card-title">{{ $t('services.aiConsulting') }}</h3>
             <p class="card-text">{{ $t('services.aiConsultingDesc') }}</p>
@@ -86,8 +86,8 @@
 
           <!-- Workshops -->
           <div class="card service-card">
-            <div class="card-icon">
-              <IconWorkshop />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-workshops.webp" alt="AI Workshops" loading="lazy" />
             </div>
             <h3 class="card-title">{{ $t('services.workshops') }}</h3>
             <p class="card-text">{{ $t('services.workshopsDesc') }}</p>
@@ -111,8 +111,8 @@
         <div class="services-grid stagger reveal">
           <!-- SEO -->
           <div class="card">
-            <div class="card-icon">
-              <IconSearch />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-seo.webp" alt="SEO" loading="lazy" />
             </div>
             <h4 class="card-title">SEO</h4>
             <p class="card-text">{{ $t('marketing.seo') }}</p>
@@ -121,8 +121,8 @@
 
           <!-- Google Ads -->
           <div class="card">
-            <div class="card-icon">
-              <IconTarget />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-google-ads.webp" alt="Google Ads" loading="lazy" />
             </div>
             <h4 class="card-title">Google Ads</h4>
             <p class="card-text">{{ $t('marketing.googleAds') }}</p>
@@ -131,8 +131,8 @@
 
           <!-- Meta Advertising -->
           <div class="card">
-            <div class="card-icon">
-              <IconTag />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-meta-ads.webp" alt="Meta Advertising" loading="lazy" />
             </div>
             <h4 class="card-title">{{ $t('nav.metaAds') }}</h4>
             <p class="card-text">{{ $t('marketing.metaAds') }}</p>
@@ -141,8 +141,8 @@
 
           <!-- Web Design -->
           <div class="card">
-            <div class="card-icon">
-              <IconLayout />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-webdesign.webp" alt="Web Design" loading="lazy" />
             </div>
             <h4 class="card-title">{{ $t('nav.webdesign') }}</h4>
             <p class="card-text">{{ $t('marketing.webDesign') }}</p>
@@ -151,8 +151,8 @@
 
           <!-- Google Tag Manager -->
           <div class="card">
-            <div class="card-icon">
-              <IconBarChart />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-gtm.webp" alt="Google Tag Manager" loading="lazy" />
             </div>
             <h4 class="card-title">Google Tag Manager</h4>
             <p class="card-text">{{ $t('marketing.gtm') }}</p>
@@ -161,8 +161,8 @@
 
           <!-- Analytics -->
           <div class="card">
-            <div class="card-icon">
-              <IconBarChart />
+            <div class="card-icon card-icon-image">
+              <img src="/images/icon-analytics.webp" alt="Analytics" loading="lazy" />
             </div>
             <h4 class="card-title">{{ $t('marketing.analytics') }}</h4>
             <p class="card-text">{{ $t('marketing.analyticsDesc') }}</p>
