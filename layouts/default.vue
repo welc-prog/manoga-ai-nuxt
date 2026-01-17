@@ -22,28 +22,35 @@ const throttle = (func: Function, limit: number) => {
   }
 }
 
-// Scroll reveal effect with throttling
+// Scroll reveal effect with throttling - SSR-safe implementation
 onMounted(() => {
-  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger')
+  // Add hydrated class to enable animations (SSR-safe: content visible by default)
+  document.documentElement.classList.add('hydrated')
 
-  const revealOnScroll = () => {
-    reveals.forEach((el) => {
-      const windowHeight = window.innerHeight
-      const elementTop = el.getBoundingClientRect().top
-      const elementVisible = 150
+  // Small delay to ensure DOM is fully ready and allows initial content to be visible
+  requestAnimationFrame(() => {
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger')
 
-      if (elementTop < windowHeight - elementVisible) {
-        el.classList.add('active')
-      }
+    const revealOnScroll = () => {
+      reveals.forEach((el) => {
+        const windowHeight = window.innerHeight
+        const elementTop = el.getBoundingClientRect().top
+        const elementVisible = 150
+
+        if (elementTop < windowHeight - elementVisible) {
+          el.classList.add('active')
+        }
+      })
+    }
+
+    const throttledReveal = throttle(revealOnScroll, 100)
+    window.addEventListener('scroll', throttledReveal, { passive: true })
+    revealOnScroll() // Initial check
+
+    onUnmounted(() => {
+      window.removeEventListener('scroll', throttledReveal)
+      document.documentElement.classList.remove('hydrated')
     })
-  }
-
-  const throttledReveal = throttle(revealOnScroll, 100)
-  window.addEventListener('scroll', throttledReveal, { passive: true })
-  revealOnScroll() // Initial check
-
-  onUnmounted(() => {
-    window.removeEventListener('scroll', throttledReveal)
   })
 })
 </script>

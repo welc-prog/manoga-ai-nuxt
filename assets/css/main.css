@@ -1448,24 +1448,74 @@ p {
 /* ============================================
    ANIMATIONS
    ============================================ */
-.reveal {
+
+/* SSR-safe reveal animations:
+   Content is visible by default for first SSR render.
+   After hydration, .hydrated class is added to enable animations.
+   This prevents the "blank content on first visit" issue. */
+
+/* Default state: visible (SSR-friendly) */
+.reveal,
+.reveal-left,
+.reveal-right {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+
+/* After hydration: hide elements that haven't been revealed yet */
+.hydrated .reveal:not(.active) {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
 
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
+.hydrated .reveal-left:not(.active) {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
 
-/* Stagger animation for grids */
-.reveal.active .card:nth-child(1) { transition-delay: 0ms; }
-.reveal.active .card:nth-child(2) { transition-delay: 100ms; }
-.reveal.active .card:nth-child(3) { transition-delay: 200ms; }
-.reveal.active .card:nth-child(4) { transition-delay: 300ms; }
-.reveal.active .card:nth-child(5) { transition-delay: 400ms; }
-.reveal.active .card:nth-child(6) { transition-delay: 500ms; }
+.hydrated .reveal-right:not(.active) {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+
+/* Active state: revealed */
+.hydrated .reveal.active,
+.hydrated .reveal-left.active,
+.hydrated .reveal-right.active {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+
+/* Stagger animation - SSR-safe */
+.stagger {
+    opacity: 1;
+}
+
+.hydrated .stagger:not(.active) {
+    opacity: 0;
+    transition: opacity 0.8s var(--ease);
+}
+
+.hydrated .stagger.active {
+    opacity: 1;
+}
+
+/* Stagger animation delays for grids */
+.hydrated .reveal.active .card:nth-child(1),
+.hydrated .stagger.active > *:nth-child(1) { transition-delay: 0ms; }
+.hydrated .reveal.active .card:nth-child(2),
+.hydrated .stagger.active > *:nth-child(2) { transition-delay: 100ms; }
+.hydrated .reveal.active .card:nth-child(3),
+.hydrated .stagger.active > *:nth-child(3) { transition-delay: 200ms; }
+.hydrated .reveal.active .card:nth-child(4),
+.hydrated .stagger.active > *:nth-child(4) { transition-delay: 300ms; }
+.hydrated .reveal.active .card:nth-child(5),
+.hydrated .stagger.active > *:nth-child(5) { transition-delay: 400ms; }
+.hydrated .reveal.active .card:nth-child(6),
+.hydrated .stagger.active > *:nth-child(6) { transition-delay: 500ms; }
 
 /* Page Transitions */
 .page-enter-active,
