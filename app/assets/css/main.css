@@ -46,13 +46,13 @@
     --font-heading: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
-    /* Spacing - More generous */
+    /* Spacing - Balanced for readability */
     --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 1.75rem;
-    --space-lg: 3.5rem;
-    --space-xl: 7rem;
-    --space-2xl: 12rem;
+    --space-sm: 0.875rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
 
     /* Radius */
     --radius-sm: 10px;
@@ -519,11 +519,11 @@ p {
    HERO
    ============================================ */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
 }
 
 .hero-content {
@@ -671,11 +671,11 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 16px 32px;
-    border-radius: var(--radius-full);
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -1075,7 +1075,7 @@ p {
    PAGE HEADER
    ============================================ */
 .page-header {
-    padding: 180px 0 var(--space-xl);
+    padding: 120px 0 var(--space-lg);
 }
 
 .page-header-with-image {
@@ -1207,6 +1207,7 @@ p {
 .social-links {
     display: flex;
     gap: 14px;
+    margin-top: var(--space-md);
 }
 
 .social-link {
@@ -1707,8 +1708,8 @@ p {
    ============================================ */
 @media (max-width: 768px) {
     :root {
-        --space-xl: 5rem;
-        --space-2xl: 7rem;
+        --space-xl: 3rem;
+        --space-2xl: 4rem;
     }
 
     .container {
@@ -1825,7 +1826,7 @@ p {
 
     .hero {
         min-height: auto;
-        padding: 140px 0 var(--space-xl);
+        padding: 100px 0 var(--space-lg);
     }
 
     .hero-visual {
@@ -1841,7 +1842,7 @@ p {
     }
 
     .page-header {
-        padding: 140px 0 var(--space-lg);
+        padding: 100px 0 var(--space-md);
     }
 
     .page-header-with-image {
@@ -1894,8 +1895,8 @@ p {
     }
 
     .btn {
-        padding: 16px 28px;
-        min-height: 52px;
+        padding: 12px 20px;
+        min-height: 44px;
     }
 
     .form-input,
