@@ -1,12 +1,12 @@
 {
   "meta": {
-    "homeTitle": "Manoga AI - Vibecoding, AI-konsultering & Digital Marketing",
-    "homeDescription": "Transform din virksomhed med AI-drevne løsninger. Over 15 års erfaring inden for digital marketing kombineret med banebrydende AI-konsultering, vibecoding og praktiske workshops."
+    "homeTitle": "Manoga AI - Vibecoding, AI-konsulentrådgivning & Digital Marketing",
+    "homeDescription": "Transformér din virksomhed med AI-drevne løsninger. Over 15 års erfaring inden for digital marketing kombineret med banebrydende AI-konsulentrådgivning, vibecoding og praktiske workshops."
   },
   "nav": {
     "home": "Hjem",
     "services": "Ydelser",
-    "aiConsulting": "AI-konsultering",
+    "aiConsulting": "AI-konsulentrådgivning",
     "metaAds": "Meta Annoncering",
     "webdesign": "Webdesign",
     "getStarted": "Kom i gang"
@@ -21,8 +21,8 @@
   "services": {
     "whatWeDo": "Det vi gør",
     "title": "AI-drevne ydelser",
-    "subtitle": "Fra hurtig prototyping med vibecoding til omfattende AI-konsultering – vi leverer resultater, der gør en forskel.",
-    "aiConsulting": "AI-konsultering",
+    "subtitle": "Fra hurtig prototyping med vibecoding til omfattende AI-konsulentrådgivning – vi leverer resultater, der gør en forskel.",
+    "aiConsulting": "AI-konsulentrådgivning",
     "advertising": "Annoncering",
     "webDesign": "Webdesign",
     "vibecoding": "Byg produktionsklare applikationer 10 gange hurtigere med AI-assisteret udvikling. Vi omdanner dine idéer til fungerende produkter på dage – ikke måneder.",
@@ -73,7 +73,7 @@
     "develop": "Udvikling",
     "developDesc": "Vibecoding-magien sker – vi bygger produktionsklar kode med hidtil uset hastighed.",
     "deploy": "Udrulning",
-    "deployDesc": "Launch med tillid. Løbende support og AI-drevet optimering."
+    "deployDesc": "Lancér med tillid. Løbende support og AI-drevet optimering."
   },
   "cta": {
     "title": "Klar til at transformere din virksomhed?",
@@ -84,20 +84,20 @@
     "tagline": "Kontakt os",
     "title": "Lad os bygge noget",
     "amazing": "fantastisk",
-    "subtitle": "Uanset om du har brug for AI-konsultering, et vibecoding-projekt eller ønsker at opkvalificere dit team – jeg er her for at hjælpe. Lad os tale om dine behov.",
+    "subtitle": "Uanset om du har brug for AI-konsulentrådgivning, et vibecoding-projekt eller ønsker at opkvalificere dit team – vi er her for at hjælpe. Lad os tale om dine behov.",
     "phone": "Telefon",
-    "connectLinkedIn": "Forbind med mig",
+    "connectLinkedIn": "Forbind med os",
     "businessReg": "CVR-registrering",
     "name": "Navn",
     "serviceInterest": "Interesseret i",
     "selectService": "Vælg en ydelse...",
     "other": "Andet",
     "message": "Besked",
-    "messagePlaceholder": "Fortæl mig om dit projekt...",
+    "messagePlaceholder": "Fortæl os om dit projekt...",
     "send": "Send Besked"
   },
   "footer": {
-    "description": "Vi transformerer virksomheder gennem vibecoding, AI-konsultering og praktiske workshops. Over 15 års erfaring inden for digital marketing møder banebrydende kunstig intelligens.",
+    "description": "Vi transformerer virksomheder gennem vibecoding, AI-konsulentrådgivning og praktiske workshops. Over 15 års erfaring inden for digital marketing møder banebrydende kunstig intelligens.",
     "digitalMarketing": "Digital Marketing",
     "seoServices": "SEO-ydelser",
     "aiServices": "AI-ydelser",
@@ -112,43 +112,43 @@
   "pages": {
     "aiConsulting": {
       "strategy": "AI-strategi",
-      "strategyDesc": "Omfattende AI-roadmap udvikling skræddersyet til dine forretningsmål og kapaciteter.",
+      "strategyDesc": "Udvikling af en omfattende AI-roadmap skræddersyet til dine forretningsmål og kapaciteter.",
       "audit": "AI-audit",
-      "auditDesc": "Evaluer dine nuværende processer og identificer høj-impact AI-muligheder.",
+      "auditDesc": "Evaluering af dine nuværende processer og identifikation af AI-muligheder med stor effekt.",
       "implementation": "Implementering",
       "implementationDesc": "Praktisk vejledning til integration af AI-værktøjer og arbejdsgange i din organisation."
     },
     "googleAds": {
       "searchCampaigns": "Søgekampagner",
-      "searchCampaignsDesc": "Målrettede søgeannoncer der fanger brugere med høj købsintention i det øjeblik de leder efter dine ydelser.",
+      "searchCampaignsDesc": "Målrettede søgeannoncer, der fanger brugere med høj købsintention, når de leder efter dine ydelser.",
       "displayRemarketing": "Display & Remarketing",
-      "displayRemarketingDesc": "Visuelle annoncer på tværs af Google Display Netværket og smart remarketing til at genengagere tidligere besøgende.",
+      "displayRemarketingDesc": "Visuelle annoncer på tværs af Google Display-netværket og smart remarketing til at genengagere tidligere besøgende.",
       "performanceMax": "Performance Max",
       "performanceMaxDesc": "AI-drevet kampagneoptimering på tværs af alle Google-kanaler for maksimal rækkevidde og konverteringer."
     },
     "seo": {
       "technicalSeo": "Teknisk SEO",
-      "technicalSeoDesc": "Site-audits, performance-optimering, strukturerede data og sikring af at søgemaskiner kan crawle og indeksere dit indhold korrekt.",
+      "technicalSeoDesc": "Site-audits, performance-optimering, strukturerede data og sikring af, at søgemaskiner kan crawle og indeksere dit indhold korrekt.",
       "contentStrategy": "Indholdsstrategi",
       "contentStrategyDesc": "AI-drevet søgeordsanalyse og indholdsplanlægning for at nå de rette målgrupper med de rette budskaber.",
       "analyticsReporting": "Analytics & Rapportering",
-      "analyticsReportingDesc": "Følg placeringer, trafik og konverteringer med klare, handlingsorienterede rapporter der viser reel forretningseffekt."
+      "analyticsReportingDesc": "Følg placeringer, trafik og konverteringer med klare, handlingsorienterede rapporter, der viser reel forretningseffekt."
     },
     "metaAds": {
       "facebookAds": "Facebook Annoncer",
       "facebookAdsDesc": "Nå milliarder af brugere med målrettede annoncer på Facebook. Tilpassede målgrupper, lookalikes og konverteringsoptimering.",
       "instagramAds": "Instagram Annoncer",
-      "instagramAdsDesc": "Visuel storytelling gennem Stories, Reels og feed-annoncer. Engager målgrupper med kreativt indhold der konverterer.",
+      "instagramAdsDesc": "Visuel storytelling gennem Stories, Reels og feed-annoncer. Engager målgrupper med kreativt indhold, der konverterer.",
       "advantagePlus": "Advantage+ Kampagner",
       "advantagePlusDesc": "Udnyt Metas AI til automatiseret kampagneoptimering og målgruppeudvidelse."
     },
     "webdesign": {
       "modernDesign": "Moderne Design",
-      "modernDesignDesc": "Rene, moderne designs der afspejler dit brand og engagerer din målgruppe. Mobile-first tilgang til alle enheder.",
+      "modernDesignDesc": "Rene, moderne designs, der afspejler dit brand og engagerer din målgruppe. Mobile-first tilgang til alle enheder.",
       "aiDevelopment": "AI-assisteret Udvikling",
       "aiDevelopmentDesc": "Vibecoding-metodologi for hurtigere udvikling uden at gå på kompromis med kvaliteten. Få din side live hurtigere.",
       "conversionOptimization": "Konverteringsoptimering",
-      "conversionOptimizationDesc": "Hver designbeslutning bakket op af UX best practices. Bygget til at konvertere besøgende til kunder."
+      "conversionOptimizationDesc": "Hver designbeslutning er bakket op af UX best practices. Bygget til at konvertere besøgende til kunder."
     },
     "vibecoding": {
       "rapidPrototyping": "Hurtig Prototyping",
@@ -170,7 +170,7 @@
       "gtmSetup": "GTM Opsætning",
       "gtmSetupDesc": "Professionel Google Tag Manager implementering med korrekt containerstruktur, navngivningskonventioner og dokumentation.",
       "conversionTracking": "Konverteringssporing",
-      "conversionTrackingDesc": "Spor det der betyder noget - formularindsendelser, køb, knapklik og tilpassede events på tværs af alle platforme.",
+      "conversionTrackingDesc": "Spor det, der betyder noget - formularindsendelser, køb, knapklik og tilpassede events på tværs af alle platforme.",
       "ga4Integration": "GA4 Integration",
       "ga4IntegrationDesc": "Korrekt Google Analytics 4 opsætning med udvidet e-handel, tilpassede events og cross-domain tracking."
     }
