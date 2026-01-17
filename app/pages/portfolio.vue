@@ -142,7 +142,7 @@ useSeoMeta({
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: var(--space-md);
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
 }
 
 .project-details {
@@ -152,19 +152,19 @@ useSeoMeta({
 }
 
 .project-detail {
-  background: var(--color-surface);
+  background: var(--bg-surface);
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border-subtle);
 }
 
 .project-detail h3 {
   margin-bottom: var(--space-md);
-  color: var(--color-text);
+  color: var(--text-primary);
 }
 
 .project-detail p {
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
   line-height: 1.8;
 }
 
@@ -177,16 +177,16 @@ useSeoMeta({
 }
 
 .tech-item {
-  background: var(--color-surface);
+  background: var(--bg-surface);
   padding: var(--space-md);
   border-radius: var(--radius-md);
   text-align: center;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border-subtle);
 }
 
 .tech-name {
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--text-primary);
 }
 
 @media (max-width: 768px) {

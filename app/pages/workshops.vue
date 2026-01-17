@@ -207,7 +207,7 @@ useSeoMeta({
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: var(--space-md);
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
 }
 
 .benefits-grid {
@@ -240,11 +240,11 @@ useSeoMeta({
 
 .benefit-item h4 {
   margin-bottom: var(--space-sm);
-  color: var(--color-text);
+  color: var(--text-primary);
 }
 
 .benefit-item p {
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -257,20 +257,20 @@ useSeoMeta({
 }
 
 .faq-item {
-  background: var(--color-surface);
+  background: var(--bg-surface);
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border-subtle);
 }
 
 .faq-question {
-  color: var(--color-text);
+  color: var(--text-primary);
   margin-bottom: var(--space-sm);
   font-size: 1.1rem;
 }
 
 .faq-answer {
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 

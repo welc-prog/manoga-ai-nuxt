@@ -164,20 +164,20 @@ const submitForm = () => {
 }
 
 .info-card {
-  background: var(--color-surface);
+  background: var(--bg-card);
   padding: var(--space-md);
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border-subtle);
 }
 
 .info-card h4 {
   margin-bottom: var(--space-xs);
-  color: var(--color-text);
+  color: var(--text-primary);
   font-size: 1rem;
 }
 
 .info-card p {
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -195,11 +195,11 @@ const submitForm = () => {
 
 .additional-info-item h4 {
   margin-bottom: var(--space-sm);
-  color: var(--color-text);
+  color: var(--text-primary);
 }
 
 .additional-info-item p {
-  color: var(--color-text-muted);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 </style>
