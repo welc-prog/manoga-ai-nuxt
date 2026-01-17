@@ -1013,9 +1013,18 @@ p {
    PAGE HEADER
    ============================================ */
 .page-header {
-    padding: 150px 0 var(--space-lg);
+    padding: 140px 0 var(--space-lg);
     text-align: center;
     position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+    z-index: -1;
 }
 
 .page-header::after {
@@ -1030,10 +1039,70 @@ p {
     border-radius: var(--radius-full);
 }
 
+/* Page header with image */
+.page-header-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+    text-align: left;
+    padding: 140px 0 var(--space-xl);
+}
+
+.page-header-with-image::after {
+    display: none;
+}
+
+.page-header-content {
+    max-width: 600px;
+}
+
+.page-header-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 16/10;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.page-header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-header-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, transparent 50%);
+    z-index: 1;
+}
+
 .page-subtitle {
     font-family: var(--font-mono);
     color: var(--secondary);
     margin-bottom: var(--space-sm);
+    display: inline-block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.page-header h1 {
+    margin-bottom: var(--space-sm);
+}
+
+.page-header-description {
+    color: var(--gray-light);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-header-with-image .page-header-description {
+    margin: 0;
 }
 
 /* ============================================
@@ -1833,6 +1902,31 @@ p {
     /* Page header */
     .page-header {
         padding: 100px 0 var(--space-md);
+    }
+
+    .page-header-with-image {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        padding: 100px 0 var(--space-lg);
+        text-align: center;
+    }
+
+    .page-header-content {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .page-header-image {
+        order: 2;
+        aspect-ratio: 16/9;
+    }
+
+    .page-header-with-image .page-header-description {
+        margin: 0 auto;
+    }
+
+    .page-header-description {
+        font-size: 1rem;
     }
 
     .page-subtitle {

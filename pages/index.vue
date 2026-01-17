@@ -208,12 +208,7 @@
         <div class="showcase-grid reveal">
           <!-- WELC -->
           <div class="showcase-item">
-            <div class="showcase-image" style="background: linear-gradient(135deg, #f7931a 0%, #ffb347 100%); display: flex; align-items: center; justify-content: center;">
-              <div style="text-align: center; padding: 2rem;">
-                <h3 style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--dark);">WeLoveEverythingCrypto</h3>
-                <p style="color: var(--dark); opacity: 0.8;">{{ $t('portfolio.welcSubtitle') }}</p>
-              </div>
-            </div>
+            <img class="showcase-image" src="/images/portfolio-crypto.webp" alt="WeLoveEverythingCrypto" />
             <div class="showcase-overlay">
               <span class="showcase-tag">{{ $t('portfolio.liveProject') }}</span>
               <h3 class="showcase-title">WeLoveEverythingCrypto</h3>
@@ -226,12 +221,7 @@
 
           <!-- Handball Stats -->
           <div class="showcase-item">
-            <div class="showcase-image" style="background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%); display: flex; align-items: center; justify-content: center;">
-              <div style="text-align: center; padding: 2rem;">
-                <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Handball Stats</h3>
-                <p style="opacity: 0.8;">{{ $t('portfolio.comingSoon') }}</p>
-              </div>
-            </div>
+            <img class="showcase-image" src="/images/portfolio-handball.webp" alt="Handball Stats" />
             <div class="showcase-overlay">
               <span class="showcase-tag">{{ $t('portfolio.comingSoon') }}</span>
               <h3 class="showcase-title">Handball Stats App</h3>

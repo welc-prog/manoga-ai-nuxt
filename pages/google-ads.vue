@@ -2,9 +2,16 @@
   <div>
     <section class="page-header">
       <div class="container">
-        <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
-        <h1>Google <span class="text-gradient">Ads</span></h1>
-        <p style="max-width: 600px; margin: var(--space-md) auto 0;">{{ $t('marketing.googleAds') }}</p>
+        <div class="page-header-with-image">
+          <div class="page-header-content">
+            <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
+            <h1>Google <span class="text-gradient">Ads</span></h1>
+            <p class="page-header-description">{{ $t('marketing.googleAds') }}</p>
+          </div>
+          <div class="page-header-image">
+            <img src="/images/google-ads.webp" alt="Google Ads" />
+          </div>
+        </div>
       </div>
     </section>
 

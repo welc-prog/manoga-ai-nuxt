@@ -2,9 +2,16 @@
   <div>
     <section class="page-header">
       <div class="container">
-        <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
-        <h1>SEO <span class="text-gradient">Services</span></h1>
-        <p style="max-width: 600px; margin: var(--space-md) auto 0;">{{ $t('marketing.seo') }}</p>
+        <div class="page-header-with-image">
+          <div class="page-header-content">
+            <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
+            <h1>SEO <span class="text-gradient">Services</span></h1>
+            <p class="page-header-description">{{ $t('marketing.seo') }}</p>
+          </div>
+          <div class="page-header-image">
+            <img src="/images/seo-analytics.webp" alt="SEO Analytics" />
+          </div>
+        </div>
       </div>
     </section>
 

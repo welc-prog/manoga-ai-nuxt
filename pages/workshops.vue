@@ -2,9 +2,16 @@
   <div>
     <section class="page-header">
       <div class="container">
-        <span class="page-subtitle">{{ $t('services.whatWeDo') }}</span>
-        <h1>{{ $t('services.workshops') }}</h1>
-        <p style="max-width: 600px; margin: var(--space-md) auto 0;">{{ $t('services.workshopsDesc') }}</p>
+        <div class="page-header-with-image">
+          <div class="page-header-content">
+            <span class="page-subtitle">{{ $t('services.whatWeDo') }}</span>
+            <h1>{{ $t('services.workshops') }}</h1>
+            <p class="page-header-description">{{ $t('services.workshopsDesc') }}</p>
+          </div>
+          <div class="page-header-image">
+            <img src="/images/workshops.webp" :alt="$t('services.workshops')" />
+          </div>
+        </div>
       </div>
     </section>
 

@@ -2,9 +2,16 @@
   <div>
     <section class="page-header">
       <div class="container">
-        <span class="page-subtitle">{{ $t('services.whatWeDo') }}</span>
-        <h1><span class="text-gradient glitch" data-text="Vibecoding">Vibecoding</span></h1>
-        <p style="max-width: 600px; margin: var(--space-md) auto 0;">{{ $t('services.vibecoding') }}</p>
+        <div class="page-header-with-image">
+          <div class="page-header-content">
+            <span class="page-subtitle">{{ $t('services.whatWeDo') }}</span>
+            <h1><span class="text-gradient">Vibecoding</span></h1>
+            <p class="page-header-description">{{ $t('services.vibecoding') }}</p>
+          </div>
+          <div class="page-header-image">
+            <img src="/images/vibecoding.webp" alt="Vibecoding - AI-assisted development" />
+          </div>
+        </div>
       </div>
     </section>
 

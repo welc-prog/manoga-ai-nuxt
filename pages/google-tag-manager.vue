@@ -2,9 +2,16 @@
   <div>
     <section class="page-header">
       <div class="container">
-        <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
-        <h1>Google Tag <span class="text-gradient">Manager</span></h1>
-        <p style="max-width: 600px; margin: var(--space-md) auto 0;">{{ $t('marketing.gtm') }}</p>
+        <div class="page-header-with-image">
+          <div class="page-header-content">
+            <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
+            <h1>Google Tag <span class="text-gradient">Manager</span></h1>
+            <p class="page-header-description">{{ $t('marketing.gtm') }}</p>
+          </div>
+          <div class="page-header-image">
+            <img src="/images/gtm.webp" alt="Google Tag Manager" />
+          </div>
+        </div>
       </div>
     </section>
 

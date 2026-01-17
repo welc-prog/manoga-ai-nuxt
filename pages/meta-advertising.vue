@@ -2,9 +2,16 @@
   <div>
     <section class="page-header">
       <div class="container">
-        <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
-        <h1>Meta <span class="text-gradient">{{ $t('services.advertising') }}</span></h1>
-        <p style="max-width: 600px; margin: var(--space-md) auto 0;">{{ $t('marketing.metaAds') }}</p>
+        <div class="page-header-with-image">
+          <div class="page-header-content">
+            <span class="page-subtitle">{{ $t('marketing.tagline') }}</span>
+            <h1>Meta <span class="text-gradient">{{ $t('services.advertising') }}</span></h1>
+            <p class="page-header-description">{{ $t('marketing.metaAds') }}</p>
+          </div>
+          <div class="page-header-image">
+            <img src="/images/meta-ads.webp" alt="Meta Advertising" />
+          </div>
+        </div>
       </div>
     </section>
 
