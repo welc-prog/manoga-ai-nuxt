@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconBrain />
             </div>
-            <h3 class="card-title">AI Strategy</h3>
-            <p class="card-text">Comprehensive AI roadmap development tailored to your business goals and capabilities.</p>
+            <h3 class="card-title">{{ $t('pages.aiConsulting.strategy') }}</h3>
+            <p class="card-text">{{ $t('pages.aiConsulting.strategyDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconSearch />
             </div>
-            <h3 class="card-title">AI Audit</h3>
-            <p class="card-text">Evaluate your current processes and identify high-impact AI opportunities.</p>
+            <h3 class="card-title">{{ $t('pages.aiConsulting.audit') }}</h3>
+            <p class="card-text">{{ $t('pages.aiConsulting.auditDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconCode />
             </div>
-            <h3 class="card-title">Implementation</h3>
-            <p class="card-text">Hands-on guidance for integrating AI tools and workflows into your organization.</p>
+            <h3 class="card-title">{{ $t('pages.aiConsulting.implementation') }}</h3>
+            <p class="card-text">{{ $t('pages.aiConsulting.implementationDesc') }}</p>
           </div>
         </div>
       </div>

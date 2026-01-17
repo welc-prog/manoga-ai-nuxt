@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconWorkshop />
             </div>
-            <h3 class="card-title">Prompt Engineering</h3>
-            <p class="card-text">Master the art of communicating with AI models. Learn techniques for better prompts, chain-of-thought reasoning, and maximizing AI output quality.</p>
+            <h3 class="card-title">{{ $t('pages.workshops.promptEngineering') }}</h3>
+            <p class="card-text">{{ $t('pages.workshops.promptEngineeringDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconCode />
             </div>
-            <h3 class="card-title">Vibecoding Bootcamp</h3>
-            <p class="card-text">Hands-on training in AI-assisted development. Build real applications using modern AI tools and frameworks.</p>
+            <h3 class="card-title">{{ $t('pages.workshops.vibecodingBootcamp') }}</h3>
+            <p class="card-text">{{ $t('pages.workshops.vibecodingBootcampDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconBrain />
             </div>
-            <h3 class="card-title">AI for Business</h3>
-            <p class="card-text">Executive-level introduction to AI capabilities, limitations, and practical business applications.</p>
+            <h3 class="card-title">{{ $t('pages.workshops.aiForBusiness') }}</h3>
+            <p class="card-text">{{ $t('pages.workshops.aiForBusinessDesc') }}</p>
           </div>
         </div>
       </div>

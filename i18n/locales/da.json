@@ -108,5 +108,71 @@
   },
   "common": {
     "learnMore": "Læs mere"
+  },
+  "pages": {
+    "aiConsulting": {
+      "strategy": "AI-strategi",
+      "strategyDesc": "Omfattende AI-roadmap udvikling skræddersyet til dine forretningsmål og kapaciteter.",
+      "audit": "AI-audit",
+      "auditDesc": "Evaluer dine nuværende processer og identificer høj-impact AI-muligheder.",
+      "implementation": "Implementering",
+      "implementationDesc": "Praktisk vejledning til integration af AI-værktøjer og arbejdsgange i din organisation."
+    },
+    "googleAds": {
+      "searchCampaigns": "Søgekampagner",
+      "searchCampaignsDesc": "Målrettede søgeannoncer der fanger brugere med høj købsintention i det øjeblik de leder efter dine ydelser.",
+      "displayRemarketing": "Display & Remarketing",
+      "displayRemarketingDesc": "Visuelle annoncer på tværs af Google Display Netværket og smart remarketing til at genengagere tidligere besøgende.",
+      "performanceMax": "Performance Max",
+      "performanceMaxDesc": "AI-drevet kampagneoptimering på tværs af alle Google-kanaler for maksimal rækkevidde og konverteringer."
+    },
+    "seo": {
+      "technicalSeo": "Teknisk SEO",
+      "technicalSeoDesc": "Site-audits, performance-optimering, strukturerede data og sikring af at søgemaskiner kan crawle og indeksere dit indhold korrekt.",
+      "contentStrategy": "Indholdsstrategi",
+      "contentStrategyDesc": "AI-drevet søgeordsanalyse og indholdsplanlægning for at nå de rette målgrupper med de rette budskaber.",
+      "analyticsReporting": "Analytics & Rapportering",
+      "analyticsReportingDesc": "Følg placeringer, trafik og konverteringer med klare, handlingsorienterede rapporter der viser reel forretningseffekt."
+    },
+    "metaAds": {
+      "facebookAds": "Facebook Annoncer",
+      "facebookAdsDesc": "Nå milliarder af brugere med målrettede annoncer på Facebook. Tilpassede målgrupper, lookalikes og konverteringsoptimering.",
+      "instagramAds": "Instagram Annoncer",
+      "instagramAdsDesc": "Visuel storytelling gennem Stories, Reels og feed-annoncer. Engager målgrupper med kreativt indhold der konverterer.",
+      "advantagePlus": "Advantage+ Kampagner",
+      "advantagePlusDesc": "Udnyt Metas AI til automatiseret kampagneoptimering og målgruppeudvidelse."
+    },
+    "webdesign": {
+      "modernDesign": "Moderne Design",
+      "modernDesignDesc": "Rene, moderne designs der afspejler dit brand og engagerer din målgruppe. Mobile-first tilgang til alle enheder.",
+      "aiDevelopment": "AI-assisteret Udvikling",
+      "aiDevelopmentDesc": "Vibecoding-metodologi for hurtigere udvikling uden at gå på kompromis med kvaliteten. Få din side live hurtigere.",
+      "conversionOptimization": "Konverteringsoptimering",
+      "conversionOptimizationDesc": "Hver designbeslutning bakket op af UX best practices. Bygget til at konvertere besøgende til kunder."
+    },
+    "vibecoding": {
+      "rapidPrototyping": "Hurtig Prototyping",
+      "rapidPrototypingDesc": "Gå fra idé til fungerende prototype på dage, ikke måneder. AI-assisteret udvikling accelererer hele processen.",
+      "fullStack": "Full-Stack Applikationer",
+      "fullStackDesc": "Komplette webapplikationer bygget med moderne frameworks. Frontend, backend og deployment inkluderet.",
+      "aiIntegration": "AI-integration",
+      "aiIntegrationDesc": "Tilføj AI-kapaciteter til dine eksisterende applikationer eller byg AI-native produkter fra bunden."
+    },
+    "workshops": {
+      "promptEngineering": "Prompt Engineering",
+      "promptEngineeringDesc": "Mestre kunsten at kommunikere med AI-modeller. Lær teknikker til bedre prompts, kæde-af-tanker ræsonnering og maksimering af AI-output kvalitet.",
+      "vibecodingBootcamp": "Vibecoding Bootcamp",
+      "vibecodingBootcampDesc": "Praktisk træning i AI-assisteret udvikling. Byg rigtige applikationer med moderne AI-værktøjer og frameworks.",
+      "aiForBusiness": "AI for Virksomheder",
+      "aiForBusinessDesc": "Introduktion til AI-kapaciteter, begrænsninger og praktiske forretningsanvendelser på ledelsesniveau."
+    },
+    "gtm": {
+      "gtmSetup": "GTM Opsætning",
+      "gtmSetupDesc": "Professionel Google Tag Manager implementering med korrekt containerstruktur, navngivningskonventioner og dokumentation.",
+      "conversionTracking": "Konverteringssporing",
+      "conversionTrackingDesc": "Spor det der betyder noget - formularindsendelser, køb, knapklik og tilpassede events på tværs af alle platforme.",
+      "ga4Integration": "GA4 Integration",
+      "ga4IntegrationDesc": "Korrekt Google Analytics 4 opsætning med udvidet e-handel, tilpassede events og cross-domain tracking."
+    }
   }
 }

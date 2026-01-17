@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconTag />
             </div>
-            <h3 class="card-title">Facebook Ads</h3>
-            <p class="card-text">Reach billions of users with targeted ads on Facebook. Custom audiences, lookalikes, and conversion optimization.</p>
+            <h3 class="card-title">{{ $t('pages.metaAds.facebookAds') }}</h3>
+            <p class="card-text">{{ $t('pages.metaAds.facebookAdsDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconLayout />
             </div>
-            <h3 class="card-title">Instagram Ads</h3>
-            <p class="card-text">Visual storytelling through Stories, Reels, and feed ads. Engage audiences with creative that converts.</p>
+            <h3 class="card-title">{{ $t('pages.metaAds.instagramAds') }}</h3>
+            <p class="card-text">{{ $t('pages.metaAds.instagramAdsDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconBarChart />
             </div>
-            <h3 class="card-title">Advantage+ Campaigns</h3>
-            <p class="card-text">Leverage Meta's AI for automated campaign optimization and audience expansion.</p>
+            <h3 class="card-title">{{ $t('pages.metaAds.advantagePlus') }}</h3>
+            <p class="card-text">{{ $t('pages.metaAds.advantagePlusDesc') }}</p>
           </div>
         </div>
       </div>

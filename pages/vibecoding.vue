@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconCode />
             </div>
-            <h3 class="card-title">Rapid Prototyping</h3>
-            <p class="card-text">Go from idea to working prototype in days, not months. AI-assisted development accelerates the entire process.</p>
+            <h3 class="card-title">{{ $t('pages.vibecoding.rapidPrototyping') }}</h3>
+            <p class="card-text">{{ $t('pages.vibecoding.rapidPrototypingDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconLayout />
             </div>
-            <h3 class="card-title">Full-Stack Applications</h3>
-            <p class="card-text">Complete web applications built with modern frameworks. Frontend, backend, and deployment included.</p>
+            <h3 class="card-title">{{ $t('pages.vibecoding.fullStack') }}</h3>
+            <p class="card-text">{{ $t('pages.vibecoding.fullStackDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconBrain />
             </div>
-            <h3 class="card-title">AI Integration</h3>
-            <p class="card-text">Add AI capabilities to your existing applications or build AI-native products from scratch.</p>
+            <h3 class="card-title">{{ $t('pages.vibecoding.aiIntegration') }}</h3>
+            <p class="card-text">{{ $t('pages.vibecoding.aiIntegrationDesc') }}</p>
           </div>
         </div>
       </div>

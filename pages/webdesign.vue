@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconLayout />
             </div>
-            <h3 class="card-title">Modern Design</h3>
-            <p class="card-text">Clean, contemporary designs that reflect your brand and engage your audience. Mobile-first approach for all devices.</p>
+            <h3 class="card-title">{{ $t('pages.webdesign.modernDesign') }}</h3>
+            <p class="card-text">{{ $t('pages.webdesign.modernDesignDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconCode />
             </div>
-            <h3 class="card-title">AI-Assisted Development</h3>
-            <p class="card-text">Vibecoding methodology for faster development without sacrificing quality. Get your site live sooner.</p>
+            <h3 class="card-title">{{ $t('pages.webdesign.aiDevelopment') }}</h3>
+            <p class="card-text">{{ $t('pages.webdesign.aiDevelopmentDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconBarChart />
             </div>
-            <h3 class="card-title">Conversion Optimization</h3>
-            <p class="card-text">Every design decision backed by UX best practices. Built to convert visitors into customers.</p>
+            <h3 class="card-title">{{ $t('pages.webdesign.conversionOptimization') }}</h3>
+            <p class="card-text">{{ $t('pages.webdesign.conversionOptimizationDesc') }}</p>
           </div>
         </div>
       </div>

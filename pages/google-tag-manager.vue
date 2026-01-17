@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconBarChart />
             </div>
-            <h3 class="card-title">GTM Setup</h3>
-            <p class="card-text">Professional Google Tag Manager implementation with proper container structure, naming conventions, and documentation.</p>
+            <h3 class="card-title">{{ $t('pages.gtm.gtmSetup') }}</h3>
+            <p class="card-text">{{ $t('pages.gtm.gtmSetupDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconTarget />
             </div>
-            <h3 class="card-title">Conversion Tracking</h3>
-            <p class="card-text">Track what matters - form submissions, purchases, button clicks, and custom events across all platforms.</p>
+            <h3 class="card-title">{{ $t('pages.gtm.conversionTracking') }}</h3>
+            <p class="card-text">{{ $t('pages.gtm.conversionTrackingDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconCode />
             </div>
-            <h3 class="card-title">GA4 Integration</h3>
-            <p class="card-text">Proper Google Analytics 4 setup with enhanced ecommerce, custom events, and cross-domain tracking.</p>
+            <h3 class="card-title">{{ $t('pages.gtm.ga4Integration') }}</h3>
+            <p class="card-text">{{ $t('pages.gtm.ga4IntegrationDesc') }}</p>
           </div>
         </div>
       </div>

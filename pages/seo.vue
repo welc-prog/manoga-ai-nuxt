@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconSearch />
             </div>
-            <h3 class="card-title">Technical SEO</h3>
-            <p class="card-text">Site audits, performance optimization, structured data, and ensuring search engines can properly crawl and index your content.</p>
+            <h3 class="card-title">{{ $t('pages.seo.technicalSeo') }}</h3>
+            <p class="card-text">{{ $t('pages.seo.technicalSeoDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconCode />
             </div>
-            <h3 class="card-title">Content Strategy</h3>
-            <p class="card-text">AI-powered keyword research and content planning to target the right audiences with the right messages.</p>
+            <h3 class="card-title">{{ $t('pages.seo.contentStrategy') }}</h3>
+            <p class="card-text">{{ $t('pages.seo.contentStrategyDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconBarChart />
             </div>
-            <h3 class="card-title">Analytics & Reporting</h3>
-            <p class="card-text">Track rankings, traffic, and conversions with clear, actionable reports that show real business impact.</p>
+            <h3 class="card-title">{{ $t('pages.seo.analyticsReporting') }}</h3>
+            <p class="card-text">{{ $t('pages.seo.analyticsReportingDesc') }}</p>
           </div>
         </div>
       </div>

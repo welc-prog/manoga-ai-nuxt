@@ -15,24 +15,24 @@
             <div class="card-icon">
               <IconTarget />
             </div>
-            <h3 class="card-title">Search Campaigns</h3>
-            <p class="card-text">Targeted search ads that capture high-intent users at the moment they're looking for your services.</p>
+            <h3 class="card-title">{{ $t('pages.googleAds.searchCampaigns') }}</h3>
+            <p class="card-text">{{ $t('pages.googleAds.searchCampaignsDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconLayout />
             </div>
-            <h3 class="card-title">Display & Remarketing</h3>
-            <p class="card-text">Visual ads across the Google Display Network and smart remarketing to re-engage past visitors.</p>
+            <h3 class="card-title">{{ $t('pages.googleAds.displayRemarketing') }}</h3>
+            <p class="card-text">{{ $t('pages.googleAds.displayRemarketingDesc') }}</p>
           </div>
 
           <div class="card">
             <div class="card-icon">
               <IconBarChart />
             </div>
-            <h3 class="card-title">Performance Max</h3>
-            <p class="card-text">AI-powered campaign optimization across all Google channels for maximum reach and conversions.</p>
+            <h3 class="card-title">{{ $t('pages.googleAds.performanceMax') }}</h3>
+            <p class="card-text">{{ $t('pages.googleAds.performanceMaxDesc') }}</p>
           </div>
         </div>
       </div>

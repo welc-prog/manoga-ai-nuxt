@@ -108,5 +108,71 @@
   },
   "common": {
     "learnMore": "Learn More"
+  },
+  "pages": {
+    "aiConsulting": {
+      "strategy": "AI Strategy",
+      "strategyDesc": "Comprehensive AI roadmap development tailored to your business goals and capabilities.",
+      "audit": "AI Audit",
+      "auditDesc": "Evaluate your current processes and identify high-impact AI opportunities.",
+      "implementation": "Implementation",
+      "implementationDesc": "Hands-on guidance for integrating AI tools and workflows into your organization."
+    },
+    "googleAds": {
+      "searchCampaigns": "Search Campaigns",
+      "searchCampaignsDesc": "Targeted search ads that capture high-intent users at the moment they're looking for your services.",
+      "displayRemarketing": "Display & Remarketing",
+      "displayRemarketingDesc": "Visual ads across the Google Display Network and smart remarketing to re-engage past visitors.",
+      "performanceMax": "Performance Max",
+      "performanceMaxDesc": "AI-powered campaign optimization across all Google channels for maximum reach and conversions."
+    },
+    "seo": {
+      "technicalSeo": "Technical SEO",
+      "technicalSeoDesc": "Site audits, performance optimization, structured data, and ensuring search engines can properly crawl and index your content.",
+      "contentStrategy": "Content Strategy",
+      "contentStrategyDesc": "AI-powered keyword research and content planning to target the right audiences with the right messages.",
+      "analyticsReporting": "Analytics & Reporting",
+      "analyticsReportingDesc": "Track rankings, traffic, and conversions with clear, actionable reports that show real business impact."
+    },
+    "metaAds": {
+      "facebookAds": "Facebook Ads",
+      "facebookAdsDesc": "Reach billions of users with targeted ads on Facebook. Custom audiences, lookalikes, and conversion optimization.",
+      "instagramAds": "Instagram Ads",
+      "instagramAdsDesc": "Visual storytelling through Stories, Reels, and feed ads. Engage audiences with creative that converts.",
+      "advantagePlus": "Advantage+ Campaigns",
+      "advantagePlusDesc": "Leverage Meta's AI for automated campaign optimization and audience expansion."
+    },
+    "webdesign": {
+      "modernDesign": "Modern Design",
+      "modernDesignDesc": "Clean, contemporary designs that reflect your brand and engage your audience. Mobile-first approach for all devices.",
+      "aiDevelopment": "AI-Assisted Development",
+      "aiDevelopmentDesc": "Vibecoding methodology for faster development without sacrificing quality. Get your site live sooner.",
+      "conversionOptimization": "Conversion Optimization",
+      "conversionOptimizationDesc": "Every design decision backed by UX best practices. Built to convert visitors into customers."
+    },
+    "vibecoding": {
+      "rapidPrototyping": "Rapid Prototyping",
+      "rapidPrototypingDesc": "Go from idea to working prototype in days, not months. AI-assisted development accelerates the entire process.",
+      "fullStack": "Full-Stack Applications",
+      "fullStackDesc": "Complete web applications built with modern frameworks. Frontend, backend, and deployment included.",
+      "aiIntegration": "AI Integration",
+      "aiIntegrationDesc": "Add AI capabilities to your existing applications or build AI-native products from scratch."
+    },
+    "workshops": {
+      "promptEngineering": "Prompt Engineering",
+      "promptEngineeringDesc": "Master the art of communicating with AI models. Learn techniques for better prompts, chain-of-thought reasoning, and maximizing AI output quality.",
+      "vibecodingBootcamp": "Vibecoding Bootcamp",
+      "vibecodingBootcampDesc": "Hands-on training in AI-assisted development. Build real applications using modern AI tools and frameworks.",
+      "aiForBusiness": "AI for Business",
+      "aiForBusinessDesc": "Executive-level introduction to AI capabilities, limitations, and practical business applications."
+    },
+    "gtm": {
+      "gtmSetup": "GTM Setup",
+      "gtmSetupDesc": "Professional Google Tag Manager implementation with proper container structure, naming conventions, and documentation.",
+      "conversionTracking": "Conversion Tracking",
+      "conversionTrackingDesc": "Track what matters - form submissions, purchases, button clicks, and custom events across all platforms.",
+      "ga4Integration": "GA4 Integration",
+      "ga4IntegrationDesc": "Proper Google Analytics 4 setup with enhanced ecommerce, custom events, and cross-domain tracking."
+    }
   }
 }
