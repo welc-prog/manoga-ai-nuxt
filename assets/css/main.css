@@ -1313,6 +1313,99 @@ p {
 }
 
 /* ============================================
+   MARQUEE / TICKER
+   ============================================ */
+.section-sm {
+    padding: var(--space-lg) 0;
+}
+
+.marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.marquee-content {
+    display: flex;
+    gap: 0;
+    animation: marquee-scroll 30s linear infinite;
+    width: max-content;
+}
+
+.marquee-content span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 var(--space-lg);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.marquee-content span::after {
+    content: '\2022';
+    margin-left: var(--space-lg);
+    color: var(--accent);
+    font-size: 0.75rem;
+}
+
+.marquee:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Gradient fade on edges */
+.marquee::before,
+.marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.marquee::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-surface), transparent);
+}
+
+.marquee::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-surface), transparent);
+}
+
+@media (max-width: 768px) {
+    .marquee-content span {
+        padding: 0 var(--space-md);
+        font-size: 0.9375rem;
+    }
+
+    .marquee-content span::after {
+        margin-left: var(--space-md);
+    }
+
+    .marquee::before,
+    .marquee::after {
+        width: 50px;
+    }
+}
+
+/* ============================================
    UTILITIES
    ============================================ */
 .text-center { text-align: center; }
@@ -1323,6 +1416,8 @@ p {
 .mt-1 { margin-top: var(--space-sm); }
 .mt-2 { margin-top: var(--space-md); }
 .mt-3 { margin-top: var(--space-lg); }
+.w-full { width: 100%; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
 
 /* ============================================
    TABLET
