@@ -114,7 +114,7 @@ const form = reactive({
 })
 
 const submitForm = () => {
-  const mailtoLink = `mailto:contact@manoga.ai?subject=Contact from ${form.name}&body=Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0APhone: ${form.phone}%0D%0AService: ${form.service}%0D%0A%0D%0AMessage:%0D%0A${form.message}`
+  const mailtoLink = `mailto:contact@manoga.digital?subject=Contact from ${form.name}&body=Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0APhone: ${form.phone}%0D%0AService: ${form.service}%0D%0A%0D%0AMessage:%0D%0A${form.message}`
   window.location.href = mailtoLink
 }
 </script>

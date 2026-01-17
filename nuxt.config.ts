@@ -1,6 +1,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  site: {
+    url: 'https://manoga.digital',
+    name: 'Manoga AI'
+  },
+
   app: {
     head: {
       charset: 'utf-8',
