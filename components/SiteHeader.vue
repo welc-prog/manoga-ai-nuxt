@@ -109,7 +109,11 @@ const throttledScrollHandler = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', throttledScrollHandler, { passive: true })
-  isScrolled.value = window.scrollY > 50 // Initial check
+
+  // Defer scroll check until after hydration to prevent mismatch
+  nextTick(() => {
+    isScrolled.value = window.scrollY > 50
+  })
 
   // Close menu on escape key
   const handleEscape = (e: KeyboardEvent) => {

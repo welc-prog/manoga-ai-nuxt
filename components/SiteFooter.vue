@@ -58,7 +58,7 @@
 
       <!-- Footer Bottom -->
       <div class="footer-bottom">
-        <p>&copy; {{ new Date().getFullYear() }} Manoga AI. {{ $t('footer.allRights') }}</p>
+        <p>&copy; {{ currentYear }} Manoga AI. {{ $t('footer.allRights') }}</p>
         <p>CVR: DK39733730 | {{ $t('footer.denmark') }}</p>
       </div>
     </div>
@@ -67,4 +67,7 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
+
+// Use useState for SSR-safe year (same value on server and client)
+const currentYear = useState('footer-year', () => new Date().getFullYear())
 </script>
