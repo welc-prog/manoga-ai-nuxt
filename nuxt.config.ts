@@ -5,6 +5,13 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false
+    }
+  ],
+
   site: {
     url: 'https://manoga.digital',
     name: 'Manoga AI'
