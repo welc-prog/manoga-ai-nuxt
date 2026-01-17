@@ -66,7 +66,7 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 
 useSeoMeta({
-  title: 'Google Ads | Manoga AI',
+  title: () => `Google Ads | Manoga AI`,
   description: () => t('marketing.googleAds'),
 })
 </script>

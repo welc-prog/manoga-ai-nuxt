@@ -66,7 +66,7 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 
 useSeoMeta({
-  title: 'SEO Services | Manoga AI',
+  title: () => `SEO | Manoga AI`,
   description: () => t('marketing.seo'),
 })
 </script>

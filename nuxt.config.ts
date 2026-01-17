@@ -14,6 +14,30 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap' }
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Manoga AI",
+            "url": "https://manoga.digital",
+            "description": "AI-powered digital marketing and web development agency specializing in Vibecoding, SEO, Google Ads, and AI consulting.",
+            "sameAs": ["https://www.linkedin.com/in/kennethabueg/"],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+45-50-58-79-00",
+              "contactType": "customer service",
+              "areaServed": ["DK", "EU"],
+              "availableLanguage": ["English", "Danish"]
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "DK"
+            }
+          })
+        }
       ]
     }
   },

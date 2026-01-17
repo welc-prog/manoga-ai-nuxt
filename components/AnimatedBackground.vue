@@ -1,14 +1,25 @@
 <template>
-  <div class="bg-animation">
-    <div
-      v-for="i in 20"
-      :key="i"
-      class="particle"
-      :style="{
-        left: `${Math.random() * 100}%`,
-        animationDelay: `${Math.random() * 15}s`,
-        animationDuration: `${10 + Math.random() * 10}s`
-      }"
-    />
-  </div>
+  <ClientOnly>
+    <div class="bg-animation">
+      <div
+        v-for="(particle, i) in particles"
+        :key="i"
+        class="particle"
+        :style="particle"
+      />
+    </div>
+  </ClientOnly>
 </template>
+
+<script setup lang="ts">
+const particles = ref<Array<{ left: string; animationDelay: string; animationDuration: string }>>([])
+
+onMounted(() => {
+  // Generate particles only on client side to avoid hydration mismatch
+  particles.value = Array.from({ length: 20 }, () => ({
+    left: `${Math.random() * 100}%`,
+    animationDelay: `${Math.random() * 15}s`,
+    animationDuration: `${10 + Math.random() * 10}s`
+  }))
+})
+</script>

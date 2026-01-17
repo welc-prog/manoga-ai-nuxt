@@ -582,9 +582,12 @@ p {
     color: var(--light);
 }
 
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+/* Only apply hover transforms on devices that support hover */
+@media (hover: hover) {
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+    }
 }
 
 .btn-secondary {
@@ -593,9 +596,11 @@ p {
     border: 2px solid var(--primary);
 }
 
-.btn-secondary:hover {
-    background: var(--primary);
-    transform: translateY(-3px);
+@media (hover: hover) {
+    .btn-secondary:hover {
+        background: var(--primary);
+        transform: translateY(-3px);
+    }
 }
 
 .btn-glow {
@@ -1376,6 +1381,10 @@ p {
 
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
+    .hero-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1549,17 +1558,21 @@ p {
         transition: transform 0.3s ease;
     }
 
+    /* Mobile dropdown - Reset desktop styles and use accordion */
     .dropdown {
-        position: static;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
         background: rgba(0, 0, 0, 0.3);
         border-radius: var(--radius-sm);
         margin: 0.5rem 0;
         padding: 0.5rem;
         min-width: auto;
         border: none;
+        left: auto !important;
+        top: auto !important;
+        backdrop-filter: none;
     }
 
     .dropdown li {
@@ -1602,13 +1615,13 @@ p {
         transform: rotate(180deg);
     }
 
-    /* Hide dropdown by default on mobile */
+    /* Hide dropdown by default on mobile - use display which works with visibility:visible */
     .has-dropdown .dropdown {
-        display: none;
+        display: none !important;
     }
 
     .has-dropdown.dropdown-open .dropdown {
-        display: block;
+        display: block !important;
     }
 
     /* Mobile nav CTA button */
@@ -1620,20 +1633,33 @@ p {
         padding: 1rem 2rem !important;
     }
 
-    /* Language switcher mobile */
+    /* Language switcher mobile - positioned to avoid menu toggle overlap */
     .language-switcher {
         position: absolute;
         top: 50%;
-        right: 60px;
+        right: 80px;
         transform: translateY(-50%);
         margin-left: 0;
-        gap: 6px;
+        gap: 4px;
         z-index: 1002;
     }
 
     .lang-flag {
-        width: 26px;
-        height: 18px;
+        width: 22px;
+        height: 16px;
+    }
+
+    /* Very small devices need more space */
+    @media (max-width: 400px) {
+        .language-switcher {
+            right: 70px;
+            gap: 2px;
+        }
+
+        .lang-flag {
+            width: 20px;
+            height: 14px;
+        }
     }
 
     /* Hero Section - Mobile optimized */
@@ -2172,4 +2198,48 @@ p {
 .page-leave-to {
     opacity: 0;
     transform: translateY(10px);
+}
+
+/* ============================================
+   ACCESSIBILITY - Prefers Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    /* Disable specific animations */
+    .bg-animation::before,
+    .particle,
+    .logo-icon,
+    .brain-core,
+    .brain-ring,
+    .brain-node,
+    .btn-glow,
+    .marquee-content,
+    .glitch::before,
+    .glitch::after {
+        animation: none !important;
+    }
+
+    /* Keep reveal elements visible */
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .stagger {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Disable hover transforms */
+    .card:hover,
+    .service-card:hover,
+    .btn:hover {
+        transform: none !important;
+    }
 }

@@ -208,7 +208,7 @@
         <div class="showcase-grid reveal">
           <!-- WELC -->
           <div class="showcase-item">
-            <img class="showcase-image" src="/images/portfolio-crypto.webp" alt="WeLoveEverythingCrypto" />
+            <img class="showcase-image" src="/images/portfolio-crypto.webp" alt="WeLoveEverythingCrypto" loading="lazy" />
             <div class="showcase-overlay">
               <span class="showcase-tag">{{ $t('portfolio.liveProject') }}</span>
               <h3 class="showcase-title">WeLoveEverythingCrypto</h3>
@@ -221,7 +221,7 @@
 
           <!-- Handball Stats -->
           <div class="showcase-item">
-            <img class="showcase-image" src="/images/portfolio-handball.webp" alt="Handball Stats" />
+            <img class="showcase-image" src="/images/portfolio-handball.webp" alt="Handball Stats" loading="lazy" />
             <div class="showcase-overlay">
               <span class="showcase-tag">{{ $t('portfolio.comingSoon') }}</span>
               <h3 class="showcase-title">Handball Stats App</h3>

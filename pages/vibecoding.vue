@@ -99,7 +99,7 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 
 useSeoMeta({
-  title: 'Vibecoding | Manoga AI',
+  title: () => `Vibecoding | Manoga AI`,
   description: () => t('services.vibecoding'),
 })
 </script>
