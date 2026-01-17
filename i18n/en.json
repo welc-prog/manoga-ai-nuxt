@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "homeTitle": "Manoga AI - Vibecoding, AI Consulting & Digital Marketing",
+    "homeDescription": "Transform your business with AI-powered solutions. 15+ years of digital marketing expertise combined with cutting-edge AI consulting, vibecoding, and hands-on workshops."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "aiConsulting": "AI Consulting",
+    "metaAds": "Meta Advertising",
+    "webdesign": "Web Design",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "tagline": "AI-Powered Digital Transformation",
+    "title": "Build The Future With",
+    "description": "We combine 15+ years of digital marketing expertise with cutting-edge AI to create solutions that actually work. From vibecoding to workshops, we're your partner in the AI revolution.",
+    "cta": "Start Your Project",
+    "secondary": "View Our Work"
+  },
+  "services": {
+    "whatWeDo": "What We Do",
+    "title": "AI-Powered Services",
+    "subtitle": "From rapid prototyping with vibecoding to comprehensive AI consulting, we deliver results that matter.",
+    "aiConsulting": "AI Consulting",
+    "advertising": "Advertising",
+    "webDesign": "Web Design",
+    "vibecoding": "Build production-ready applications at 10x speed using AI-assisted development. We transform your ideas into working products in days, not months.",
+    "aiConsultingDesc": "Strategic guidance on implementing AI in your business. We help you identify opportunities, avoid pitfalls, and maximize ROI on AI investments.",
+    "workshops": "AI Workshops",
+    "workshopsDesc": "Hands-on training for teams looking to leverage AI. From prompt engineering to building AI workflows, we get your team AI-ready."
+  },
+  "marketing": {
+    "tagline": "Digital Marketing",
+    "yearsOf": "Years of",
+    "expertise": "Expertise",
+    "subtitle": "Deep digital marketing knowledge combined with AI-powered optimization for maximum impact.",
+    "seo": "Data-driven search optimization that gets you found. Technical SEO, content strategy, and AI-powered insights.",
+    "googleAds": "Performance-focused PPC campaigns that convert. Smart bidding, audience targeting, and continuous optimization.",
+    "metaAds": "Facebook & Instagram campaigns that reach your audience. Creative strategy, audience building, and ROI tracking.",
+    "webDesign": "Modern, conversion-focused websites built with AI-assisted development. Fast, responsive, and optimized.",
+    "gtm": "Proper tracking implementation for data-driven decisions. GTM setup, conversion tracking, and analytics.",
+    "analytics": "Analytics & Reporting",
+    "analyticsDesc": "Custom dashboards and reports that make sense. GA4 setup, data visualization, and actionable insights."
+  },
+  "stats": {
+    "years": "Years Experience",
+    "projects": "Projects Delivered",
+    "faster": "Faster Development",
+    "support": "AI-Powered Support"
+  },
+  "portfolio": {
+    "tagline": "Our Work",
+    "featured": "Featured",
+    "projects": "Projects",
+    "subtitle": "Real products built with vibecoding and AI. See what's possible when experience meets innovation.",
+    "welcSubtitle": "Cryptocurrency News & Analysis",
+    "liveProject": "Live Project",
+    "welcDesc": "Comprehensive cryptocurrency news platform built with Nuxt 3, featuring real-time data, multi-language support, and AI-powered content generation.",
+    "visitSite": "Visit Site",
+    "comingSoon": "Coming Soon",
+    "handballDesc": "Advanced handball statistics and analytics platform. Real-time match tracking, player performance metrics, and AI-powered predictions.",
+    "inDevelopment": "In Development"
+  },
+  "process": {
+    "tagline": "How We Work",
+    "the": "The ",
+    "process": " Process",
+    "discovery": "Discovery",
+    "discoveryDesc": "We understand your vision, goals, and requirements through collaborative discussion.",
+    "design": "Design",
+    "designDesc": "AI-assisted rapid prototyping to visualize the solution before building.",
+    "develop": "Develop",
+    "developDesc": "Vibecoding magic happens - building production-ready code at unprecedented speed.",
+    "deploy": "Deploy",
+    "deployDesc": "Launch with confidence. Continuous support and AI-powered optimization."
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "subtitle": "Let's discuss how AI and vibecoding can accelerate your next project.",
+    "button": "Get Started Today"
+  },
+  "contact": {
+    "tagline": "Get In Touch",
+    "title": "Let's Build Something",
+    "amazing": "Amazing",
+    "subtitle": "Whether you need AI consulting, a vibecoding project, or want to upskill your team - I'm here to help. Let's talk about your needs.",
+    "phone": "Phone",
+    "connectLinkedIn": "Connect with me",
+    "businessReg": "Business Registration",
+    "name": "Name",
+    "serviceInterest": "Service Interest",
+    "selectService": "Select a service...",
+    "other": "Other",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "send": "Send Message"
+  },
+  "footer": {
+    "description": "Transforming businesses through vibecoding, AI consulting, and hands-on workshops. 15+ years of digital marketing expertise meets cutting-edge artificial intelligence.",
+    "digitalMarketing": "Digital Marketing",
+    "seoServices": "SEO Services",
+    "aiServices": "AI Services",
+    "contact": "Contact",
+    "linkedinProfile": "LinkedIn Profile",
+    "allRights": "All rights reserved.",
+    "denmark": "Denmark"
+  },
+  "common": {
+    "learnMore": "Learn More"
+  }
+}

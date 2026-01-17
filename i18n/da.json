@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "homeTitle": "Manoga AI - Vibecoding, AI-konsultering & Digital Marketing",
+    "homeDescription": "Transform din virksomhed med AI-drevne løsninger. Over 15 års erfaring inden for digital marketing kombineret med banebrydende AI-konsultering, vibecoding og praktiske workshops."
+  },
+  "nav": {
+    "home": "Hjem",
+    "services": "Ydelser",
+    "aiConsulting": "AI-konsultering",
+    "metaAds": "Meta Annoncering",
+    "webdesign": "Webdesign",
+    "getStarted": "Kom i gang"
+  },
+  "hero": {
+    "tagline": "AI-drevet digital transformation",
+    "title": "Skab fremtiden med",
+    "description": "Vi kombinerer over 15 års erfaring inden for digital marketing med banebrydende AI for at skabe løsninger, der virkelig virker. Fra vibecoding til workshops – vi er din partner i AI-revolutionen.",
+    "cta": "Start dit projekt",
+    "secondary": "Se vores arbejde"
+  },
+  "services": {
+    "whatWeDo": "Det vi gør",
+    "title": "AI-drevne ydelser",
+    "subtitle": "Fra hurtig prototyping med vibecoding til omfattende AI-konsultering – vi leverer resultater, der gør en forskel.",
+    "aiConsulting": "AI-konsultering",
+    "advertising": "Annoncering",
+    "webDesign": "Webdesign",
+    "vibecoding": "Byg produktionsklare applikationer 10 gange hurtigere med AI-assisteret udvikling. Vi omdanner dine idéer til fungerende produkter på dage – ikke måneder.",
+    "aiConsultingDesc": "Strategisk rådgivning om implementering af AI i din virksomhed. Vi hjælper dig med at identificere muligheder, undgå faldgruber og maksimere afkastet på AI-investeringer.",
+    "workshops": "AI Workshops",
+    "workshopsDesc": "Praktisk træning for teams, der vil mestre AI. Fra prompt engineering til opbygning af AI-arbejdsgange – vi gør dit team klar til AI."
+  },
+  "marketing": {
+    "tagline": "Digital Marketing",
+    "yearsOf": "års",
+    "expertise": "ekspertise",
+    "subtitle": "Dyb viden inden for digital marketing kombineret med AI-drevet optimering for maksimal effekt.",
+    "seo": "Datadrevet søgeoptimering, der får dig fundet. Teknisk SEO, indholdsstrategi og AI-drevne indsigter.",
+    "googleAds": "Performancefokuserede PPC-kampagner, der konverterer. Smart budgivning, præcis målretning og løbende optimering.",
+    "metaAds": "Facebook & Instagram-kampagner, der når din målgruppe. Kreativ strategi, publikumsopbygning og ROI-måling.",
+    "webDesign": "Moderne, konverteringsfokuserede websites bygget med AI-assisteret udvikling. Hurtige, responsive og optimerede.",
+    "gtm": "Korrekt tracking-implementering til datadrevne beslutninger. GTM-opsætning, konverteringssporing og analyser.",
+    "analytics": "Analyse & Rapportering",
+    "analyticsDesc": "Skræddersyede dashboards og rapporter, der giver mening. GA4-opsætning, datavisualisering og handlingsorienterede indsigter."
+  },
+  "stats": {
+    "years": "års erfaring",
+    "projects": "projekter leveret",
+    "faster": "hurtigere udvikling",
+    "support": "AI-drevet support"
+  },
+  "portfolio": {
+    "tagline": "Vores arbejde",
+    "featured": "Udvalgte",
+    "projects": "projekter",
+    "subtitle": "Rigtige produkter bygget med vibecoding og AI. Se, hvad der er muligt, når erfaring møder innovation.",
+    "welcSubtitle": "Kryptovaluta-nyheder og analyse",
+    "liveProject": "Live Projekt",
+    "welcDesc": "Omfattende kryptovaluta-nyhedsplatform bygget med Nuxt 3 – med realtidsdata, flersproget support og AI-genereret indhold.",
+    "visitSite": "Besøg siden",
+    "comingSoon": "Kommer Snart",
+    "handballDesc": "Avanceret håndboldstatistik- og analyseplatform. Realtids kampsporing, spillerpræstationsmålinger og AI-drevne forudsigelser.",
+    "inDevelopment": "Under Udvikling"
+  },
+  "process": {
+    "tagline": "Sådan arbejder vi",
+    "the": "",
+    "process": "-processen",
+    "discovery": "Opdagelse",
+    "discoveryDesc": "Vi forstår din vision, dine mål og krav gennem tæt dialog.",
+    "design": "Design",
+    "designDesc": "AI-assisteret hurtig prototyping – visualisér løsningen, før den bygges.",
+    "develop": "Udvikling",
+    "developDesc": "Vibecoding-magien sker – vi bygger produktionsklar kode med hidtil uset hastighed.",
+    "deploy": "Udrulning",
+    "deployDesc": "Launch med tillid. Løbende support og AI-drevet optimering."
+  },
+  "cta": {
+    "title": "Klar til at transformere din virksomhed?",
+    "subtitle": "Lad os tale om, hvordan AI og vibecoding kan accelerere dit næste projekt.",
+    "button": "Kom i gang i dag"
+  },
+  "contact": {
+    "tagline": "Kontakt os",
+    "title": "Lad os bygge noget",
+    "amazing": "fantastisk",
+    "subtitle": "Uanset om du har brug for AI-konsultering, et vibecoding-projekt eller ønsker at opkvalificere dit team – jeg er her for at hjælpe. Lad os tale om dine behov.",
+    "phone": "Telefon",
+    "connectLinkedIn": "Forbind med mig",
+    "businessReg": "CVR-registrering",
+    "name": "Navn",
+    "serviceInterest": "Interesseret i",
+    "selectService": "Vælg en ydelse...",
+    "other": "Andet",
+    "message": "Besked",
+    "messagePlaceholder": "Fortæl mig om dit projekt...",
+    "send": "Send Besked"
+  },
+  "footer": {
+    "description": "Vi transformerer virksomheder gennem vibecoding, AI-konsultering og praktiske workshops. Over 15 års erfaring inden for digital marketing møder banebrydende kunstig intelligens.",
+    "digitalMarketing": "Digital Marketing",
+    "seoServices": "SEO-ydelser",
+    "aiServices": "AI-ydelser",
+    "contact": "Kontakt",
+    "linkedinProfile": "LinkedIn-profil",
+    "allRights": "Alle rettigheder forbeholdes.",
+    "denmark": "Danmark"
+  },
+  "common": {
+    "learnMore": "Læs mere"
+  }
+}
