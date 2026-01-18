@@ -221,14 +221,14 @@
 
           <!-- Handball Stats -->
           <div class="showcase-item">
-            <img class="showcase-image" src="/images/portfolio-handball.webp" alt="Handball Stats" loading="lazy" />
+            <img class="showcase-image" src="/images/portfolio-handball.webp" alt="Handball Tracker" loading="lazy" />
             <div class="showcase-overlay">
-              <span class="showcase-tag">{{ $t('portfolio.comingSoon') }}</span>
-              <h3 class="showcase-title">Handball Stats App</h3>
+              <span class="showcase-tag">{{ $t('portfolio.liveProject') }}</span>
+              <h3 class="showcase-title">Handball Tracker</h3>
               <p>{{ $t('portfolio.handballDesc') }}</p>
-              <span class="btn btn-secondary">
-                {{ $t('portfolio.inDevelopment') }}
-              </span>
+              <a href="https://handballtracker.com" target="_blank" rel="noopener" class="btn btn-primary">
+                {{ $t('portfolio.visitSite') }} <IconExternal />
+              </a>
             </div>
           </div>
         </div>
