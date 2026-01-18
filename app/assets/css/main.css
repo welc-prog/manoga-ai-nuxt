@@ -1306,6 +1306,7 @@ p {
     overflow: hidden;
     aspect-ratio: 16/10;
     border: 1px solid var(--border-subtle);
+    background: var(--bg-surface);
 }
 
 .showcase-image {
@@ -1313,26 +1314,23 @@ p {
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s var(--ease);
+    opacity: 0.4;
+}
+
+.showcase-item:hover .showcase-image {
+    opacity: 0.5;
+    transform: scale(1.05);
 }
 
 .showcase-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10, 10, 15, 0.95) 0%, rgba(10, 10, 15, 0.5) 40%, transparent 70%);
+    background: linear-gradient(135deg, rgba(10, 10, 15, 0.7) 0%, rgba(10, 10, 15, 0.5) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: var(--space-lg);
-    opacity: 0;
     transition: var(--transition);
-}
-
-.showcase-item:hover .showcase-overlay {
-    opacity: 1;
-}
-
-.showcase-item:hover .showcase-image {
-    transform: scale(1.08);
 }
 
 .showcase-title {
@@ -1873,10 +1871,6 @@ p {
 
     .showcase-grid {
         grid-template-columns: 1fr;
-    }
-
-    .showcase-overlay {
-        opacity: 1;
     }
 
     .footer-grid {
