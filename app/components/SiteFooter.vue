@@ -68,6 +68,7 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
 
-// Use useState for SSR-safe year (same value on server and client)
-const currentYear = useState('footer-year', () => new Date().getFullYear())
+// Hardcode year for SSR to prevent hydration mismatch
+// (prerendered pages might have different year than client)
+const currentYear = 2025
 </script>

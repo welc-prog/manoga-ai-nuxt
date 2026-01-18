@@ -1,5 +1,5 @@
 <template>
-  <header class="site-header" :class="{ scrolled: isScrolled, 'menu-open': menuOpen }" id="site-header">
+  <header class="site-header" :class="{ 'menu-open': menuOpen }" id="site-header">
     <div class="container">
       <div class="header-inner">
         <!-- Logo -->
@@ -67,34 +67,49 @@ const localePath = useLocalePath()
 
 const menuOpen = ref(false)
 const dropdownOpen = ref(false)
-const isScrolled = ref(false)
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value
   dropdownOpen.value = false
 
-  // Body scroll lock
-  if (menuOpen.value) {
-    document.body.style.overflow = 'hidden'
-    document.body.style.position = 'fixed'
-    document.body.style.width = '100%'
-  } else {
-    document.body.style.overflow = ''
-    document.body.style.position = ''
-    document.body.style.width = ''
+  // Body scroll lock - client only
+  if (import.meta.client) {
+    if (menuOpen.value) {
+      document.body.style.overflow = 'hidden'
+      document.body.style.position = 'fixed'
+      document.body.style.width = '100%'
+    } else {
+      document.body.style.overflow = ''
+      document.body.style.position = ''
+      document.body.style.width = ''
+    }
   }
 }
 
 const closeMenu = () => {
   menuOpen.value = false
   dropdownOpen.value = false
-  document.body.style.overflow = ''
-  document.body.style.position = ''
-  document.body.style.width = ''
+  if (import.meta.client) {
+    document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.width = ''
+  }
 }
 
 const toggleDropdown = () => {
   dropdownOpen.value = !dropdownOpen.value
+}
+
+// Apply scrolled class via DOM (not reactive) to prevent hydration mismatch
+const updateScrollClass = () => {
+  const header = document.getElementById('site-header')
+  if (header) {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled')
+    } else {
+      header.classList.remove('scrolled')
+    }
+  }
 }
 
 // Throttle for scroll performance
@@ -102,7 +117,7 @@ let scrollThrottle: ReturnType<typeof setTimeout> | null = null
 const throttledScrollHandler = () => {
   if (scrollThrottle) return
   scrollThrottle = setTimeout(() => {
-    isScrolled.value = window.scrollY > 50
+    updateScrollClass()
     scrollThrottle = null
   }, 100)
 }
@@ -110,10 +125,8 @@ const throttledScrollHandler = () => {
 onMounted(() => {
   window.addEventListener('scroll', throttledScrollHandler, { passive: true })
 
-  // Defer scroll check until after hydration to prevent mismatch
-  nextTick(() => {
-    isScrolled.value = window.scrollY > 50
-  })
+  // Initial scroll check after mount
+  updateScrollClass()
 
   // Close menu on escape key
   const handleEscape = (e: KeyboardEvent) => {
