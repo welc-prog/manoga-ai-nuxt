@@ -29,7 +29,7 @@
               <span class="showcase-tag">{{ $t('portfolio.liveProject') }}</span>
               <h3 class="showcase-title">WeLoveEverythingCrypto</h3>
               <p>{{ $t('portfolio.welcDesc') }}</p>
-              <a href="https://weloveeverythingcrypto.com" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 1rem;">
+              <a href="https://weloveeverythingcrypto.com" target="_blank" rel="noopener" class="btn btn-primary">
                 {{ $t('portfolio.visitSite') }} <IconExternal />
               </a>
             </div>
@@ -42,7 +42,7 @@
               <span class="showcase-tag">{{ $t('portfolio.comingSoon') }}</span>
               <h3 class="showcase-title">Handball Stats App</h3>
               <p>{{ $t('portfolio.handballDesc') }}</p>
-              <span class="btn btn-secondary" style="margin-top: 1rem;">
+              <span class="btn btn-secondary">
                 {{ $t('portfolio.inDevelopment') }}
               </span>
             </div>

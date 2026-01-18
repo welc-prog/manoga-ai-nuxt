@@ -1297,57 +1297,73 @@ p {
 .showcase-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    gap: var(--space-lg);
 }
 
 .showcase-item {
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    aspect-ratio: 16/10;
-    border: 1px solid var(--border-subtle);
     background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition);
+}
+
+.showcase-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .showcase-image {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
-    transition: transform 0.6s var(--ease);
-    opacity: 0.4;
+    border-bottom: 1px solid var(--border-subtle);
 }
 
 .showcase-item:hover .showcase-image {
-    opacity: 0.5;
-    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 .showcase-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(10, 10, 15, 0.7) 0%, rgba(10, 10, 15, 0.5) 100%);
+    padding: var(--space-lg);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: var(--space-lg);
-    transition: var(--transition);
-}
-
-.showcase-title {
-    font-size: 1.375rem;
-    margin-bottom: var(--space-sm);
+    gap: var(--space-sm);
 }
 
 .showcase-tag {
     display: inline-block;
+    width: fit-content;
     background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
     padding: 6px 14px;
     border-radius: var(--radius-full);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    margin-bottom: var(--space-xs);
+}
+
+.showcase-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+}
+
+.showcase-overlay p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    flex-grow: 1;
+}
+
+.showcase-overlay .btn {
+    width: 100%;
+    justify-content: center;
 }
 
 /* ============================================
