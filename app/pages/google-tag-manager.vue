@@ -135,7 +135,7 @@
     <section class="section">
       <div class="container">
         <div class="text-center mb-3">
-          <span class="hero-tagline">{{ $t('common.faq') }}</span>
+          <span class="hero-tagline">{{ $t('common.gotQuestions') }}</span>
           <h2>{{ $t('common.faq') }}</h2>
         </div>
 
@@ -249,7 +249,7 @@ useSeoMeta({
 
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-lg);
   max-width: 1000px;
   margin: 0 auto;
